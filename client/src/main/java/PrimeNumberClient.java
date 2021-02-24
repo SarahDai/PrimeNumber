@@ -4,12 +4,11 @@ import java.util.concurrent.TimeUnit;
 
 public class PrimeNumberClient{
   private static final int TOTAL_REQUESTS = 100000;
-  private static final int NUM_THREADS = 1000;
+  private static final int NUM_THREADS = 500;
 
   public static void main(String[] args) throws InterruptedException {
     int requestPerThread = TOTAL_REQUESTS / NUM_THREADS;
     final ActiveCount primeCount = new ActiveCount();
-    final ActiveCount nonPrimeCount = new ActiveCount();
 
     // Create the thread pool
     ExecutorService pool = Executors.newFixedThreadPool(NUM_THREADS);
@@ -17,7 +16,7 @@ public class PrimeNumberClient{
 
     // Start request
     for (int i = 0; i < NUM_THREADS; i++) {
-      Runnable thread = new PrimeNumberRunnable(requestPerThread, primeCount, nonPrimeCount);
+      Runnable thread = new PrimeNumberRunnable(requestPerThread, primeCount);
       pool.execute(thread);
     }
 
@@ -42,14 +41,12 @@ public class PrimeNumberClient{
     // Evaluation
     long endTimeStamp = System.currentTimeMillis();
     long wallTime = endTimeStamp - startTimeStamp;
-    long throughPut = TOTAL_REQUESTS * 1000 / wallTime;
 
     System.out.println("-----Prime Number------");
     System.out.println("Total requests: " + TOTAL_REQUESTS);
     System.out.println("Total wall time (secs) : " + wallTime / 1000.0);
-    System.out.println("Throughput (requests per second): " + throughPut);
     System.out.println("Total number of primes: " + primeCount.getCount());
-    System.out.println("Total number of non-primes: " + nonPrimeCount.getCount());
+    System.out.println("Total number of non-primes: " + (TOTAL_REQUESTS - primeCount.getCount()));
   }
 
 }

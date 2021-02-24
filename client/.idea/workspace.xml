@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="cd87d292-4d2c-484e-9b7b-b8360959e872" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PrimeNumberClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrimeNumberClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PrimeNumberRunnable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrimeNumberRunnable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +49,20 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
+  <component name="RunManager">
+    <configuration name="PrimeNumberClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PrimeNumberClient" />
+      <module name="client" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.PrimeNumberClient" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -57,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1614122817310</updated>
       <workItem from="1614122818570" duration="2076000" />
-      <workItem from="1614125204859" duration="2706000" />
+      <workItem from="1614125204859" duration="6151000" />
     </task>
     <servers />
   </component>
@@ -65,9 +82,29 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="184" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1614130859673">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="184" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1614130859673" />
     <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser" timestamp="1614123214512">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="533" y="170" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1614123214512" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1614131334303">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1614131334303" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1614131334302">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1614131334302" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1614131334301">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1614131334301" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1614131334303">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1614131334303" />
   </component>
 </project>
