@@ -1,4 +1,3 @@
-import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
@@ -9,6 +8,8 @@ public class PrimeNumberClient{
 
   public static void main(String[] args) throws InterruptedException {
     int requestPerThread = TOTAL_REQUESTS / NUM_THREADS;
+    final ActiveCount primeCount = new ActiveCount();
+    final ActiveCount nonPrimeCount = new ActiveCount();
 
     // Create the thread pool
     ExecutorService pool = Executors.newFixedThreadPool(NUM_THREADS);
@@ -16,7 +17,7 @@ public class PrimeNumberClient{
 
     // Start request
     for (int i = 0; i < NUM_THREADS; i++) {
-      Runnable thread = new PrimeNumberRunnable(requestPerThread);
+      Runnable thread = new PrimeNumberRunnable(requestPerThread, primeCount, nonPrimeCount);
       pool.execute(thread);
     }
 
@@ -47,6 +48,8 @@ public class PrimeNumberClient{
     System.out.println("Total requests: " + TOTAL_REQUESTS);
     System.out.println("Total wall time (secs) : " + wallTime / 1000.0);
     System.out.println("Throughput (requests per second): " + throughPut);
+    System.out.println("Total number of primes: " + primeCount.getCount());
+    System.out.println("Total number of non-primes: " + nonPrimeCount.getCount());
   }
 
 }
