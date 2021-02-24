@@ -4,7 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 public class PrimeNumberClient{
   private static final int TOTAL_REQUESTS = 100000;
-  private static final int NUM_THREADS = 500;
+  private static final int NUM_THREADS = 1000;
 
   public static void main(String[] args) throws InterruptedException {
     int requestPerThread = TOTAL_REQUESTS / NUM_THREADS;

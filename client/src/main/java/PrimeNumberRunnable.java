@@ -56,7 +56,7 @@ public class PrimeNumberRunnable implements Runnable{
   }
 
   private int generateRandomOddNumber() {
-    int val = LOWER_BOUND + ThreadLocalRandom.current().nextInt(UPPER_BOUND - LOWER_BOUND);
-    return val%2 == 0 ? val + 1 : val;
+    int val = ThreadLocalRandom.current().nextInt(LOWER_BOUND, UPPER_BOUND) | 1;
+    return val;
   }
 }

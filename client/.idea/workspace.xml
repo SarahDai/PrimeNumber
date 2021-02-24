@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd87d292-4d2c-484e-9b7b-b8360959e872" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PrimeNumberClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrimeNumberClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PrimeNumberRunnable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrimeNumberRunnable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +57,7 @@
       <option name="presentableId" value="Default" />
       <updated>1614122817310</updated>
       <workItem from="1614122818570" duration="2076000" />
-      <workItem from="1614125204859" duration="1977000" />
+      <workItem from="1614125204859" duration="2706000" />
     </task>
     <servers />
   </component>
